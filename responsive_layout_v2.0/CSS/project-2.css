@@ -1,0 +1,486 @@
+* {
+  box-sizing: border-box;
+  -webkit-box-sizing:border-box;
+  -moz-box-sizing:border-box;
+}
+
+body {
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  background-color: white;
+  margin: 0 auto;
+  width:90%;
+
+
+}
+
+h1 {
+  font-size: 2.5em;
+}
+h2 {
+  font-size: 2em;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+}
+ul, li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;          /* Did not work. have to do it in a class */
+  list-style: none;
+  text-transform: uppercase;
+}
+
+main {
+  background-color: white;
+}
+a {
+  text-decoration: none;
+
+}
+
+/*------------ Main Styles------------*/
+/*- Header-*/
+.main-header {
+  padding-bottom: 5%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items:center;
+  justify-content: center;
+}
+#head-name {
+  order: -1;
+}
+.head {
+  display: flex;
+  order: 4;
+  flex-direction: column-reverse;
+  align-self: : center;
+}
+
+.main-nav a {
+  color: darkgrey;
+  font-weight: bold;
+  background-color:rgb(245, 245, 245);
+  border-radius: 3px;
+  display: block;
+}
+a:hover {
+  color:black;
+}
+.main-nav li {
+
+  padding: 3% 0;
+  font-size: 1.1em;
+
+
+}
+.main-nav {
+  list-style: none;
+  order: 0;
+  padding: 1em 0;
+  text-transform: uppercase;
+  width: 100%;
+
+}
+
+
+/*- Contact-*/
+
+.contact {
+  background: white;
+  display: block;
+  padding: 5% 0;
+  border-top: 1px solid darkgrey;
+  padding-top: 3.5em;
+  border-bottom: 1px solid darkgrey;
+  padding-bottom: 3.5em;
+  font-size: 1.2em;
+}
+
+.phone,
+.email {
+  font-weight: bold;
+}
+/*- Footer-*/
+.secondary-nav {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+.secondary-nav a {
+    color: darkgrey;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.secondary-nav ul {
+  display: inline-flex;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0 4%;
+}
+
+#name:hover {
+  color: black;
+}
+#button:hover {
+  color:black;
+}
+#name {
+  order: 1;
+  display: flex;
+  color: darkgrey;
+}
+
+#button {
+  order: 2;
+  display: flex;
+  color: darkgrey;
+}
+
+/* Main Sections-*/
+.main {
+  align-items: : center;
+}
+
+.portfolio {
+  display: flex;
+  flex-direction: column;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+
+  border-top: 1px solid grey;
+  padding-bottom: 5%;
+  padding-top: 5%;
+
+
+
+
+}
+
+.marketing-page {
+  flex-direction: column-reverse;
+  display: flex;
+}
+
+#m1 {
+  order: 3;
+}
+
+#m2 {
+  order: 2;
+}
+
+#m3 {
+  order: 1;
+}
+
+.search-page {
+  flex-direction: column-reverse;
+  display: flex;
+
+}
+
+#s1 {
+  order: 3;
+}
+
+#s2 {
+  order: 2;
+}
+
+#s3 {
+  order: 1;
+}
+
+.travel-app {
+  flex-direction: column-reverse;
+  display: flex;
+}
+
+#t1 {
+  order: 3;
+}
+
+#t2 {
+  order: 2;
+}
+
+#t3 {
+  order: 1;
+}
+
+.map {
+  flex-direction: column-reverse;
+  display: flex;
+}
+
+#map1 {
+  order: 3;
+}
+
+#map2 {
+  order: 2;
+}
+
+#map3 {
+  order: 1;
+}
+
+.photo-galery {
+  flex-direction: column-reverse;
+  display: flex;
+
+}
+
+#p1 {
+  order: 3;
+}
+
+#p2 {
+  order: 2;
+}
+
+#p3 {
+  order: 1;
+}
+
+.calculator {
+  flex-direction: column-reverse;
+  display: flex;
+
+}
+
+#c1 {
+  order: 3;
+}
+
+#c2 {
+  order: 2;
+}
+
+#c3 {
+  order: 1;
+}
+
+
+
+
+
+
+/*------------------ Media Queries------------------ */
+
+
+
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+  /*Header*/
+  .main-header {
+    display: flex;
+    flex-direction: column;
+  }
+  #head-name {
+    order: 1;
+    font-size: 3em;
+
+  }
+  .main-nav {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-around;
+    order: 2;
+    background-color: white;
+    padding-bottom: 2%;
+
+  }
+  .main-nav a {
+    background-color: white;
+    font-size: 1.5em;
+    border-bottom: 1px solid grey;
+
+  }
+  .head{
+    display: inline-flex;
+    flex-direction: row;
+    align-self: baseline;
+    flex-wrap: nowrap;
+
+  }
+
+  #head-text {
+    padding-right:2%;
+  }
+  /*-----Main-Content--*/
+  .main {
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    align-self: center;
+      overflow: hidden;
+
+  }
+.main img {
+  padding-bottom: 5%;
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+
+}
+.portfolio {
+  display: inline-flex;
+  order: -1;
+
+}
+/*Main-1*/
+.main-1 {
+  display: inline-flex;
+  padding: 10%;
+  order:-1;
+  align-items: baseline;
+}
+    .marketing-page {
+      padding-right: 3%;
+    }
+    .search-page {
+      padding-left: 3%;
+    }
+/*Main-2*/
+.main-2 {
+  display: inline-flex;
+  padding: 10%;
+  order: 2;
+  align-items: baseline;
+}
+    .travel-app {
+      padding-right: 3%;
+      flex: 1;
+    }
+    .map {
+      padding-left: 3%;
+      flex: 1;
+    }
+
+
+/*Main-3*/
+.main-3 {
+  display: inline-flex;
+  padding: 10%;
+  order:3;
+  align-items: baseline;
+}
+    .photo-galery {
+      padding-right: 3%;
+    }
+    .calculator {
+      padding-left: 3%;
+    }
+}
+
+
+
+
+
+
+
+@media (min-width: 1024px){
+
+  /*Header*/
+  .main-header {
+    display: inline-flex;
+    flex-direction: column;
+    align-content: space-around;
+    align-self: center;
+      overflow: hidden;
+  }
+  #head-name {
+    order: 1;
+    font-size: 3em;
+
+  }
+  .main-nav {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-around;
+    order: 2;
+    background-color: white;
+    padding-bottom: 2%;
+
+  }
+  .main-nav a {
+    background-color: white;
+    font-size: 1.5em;
+    border-bottom: 1px solid grey;
+
+  }
+  .head{
+    display: inline-flex;
+    flex-direction: row;
+    align-self: baseline;
+    flex-wrap: nowrap;
+  }
+
+  #head-text {
+    padding-right:2%;
+  }
+
+  /*Main-Content*/
+.main img {
+  padding: 10%;
+}
+.main {
+  display: inline-block;
+
+
+  }
+
+.portfolio {
+  display: inline-block
+
+}
+.marketing-page,
+.search-page,
+.travel-app {
+  display: block;
+  padding: 10%;
+  order:-1;
+  align-items: baseline;
+  background-color: yellow;
+}
+.search-page {
+  display: inline-block;
+  float: right;
+}
+.travel-app {
+  float: right;
+}
+.map,
+.photo-galery,
+.calculator {
+  display:inline-block;
+  flex-wrap: nowrap;
+  padding: 10%;
+  order:-1;
+  align-items: baseline;
+  background-color: black;
+
+}
+
+/* Clearfix */
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
